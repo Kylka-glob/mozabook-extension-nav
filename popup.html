@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MozaBook AI Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-menu" class="main-menu">
+    <div class="main-header">
+      <div class="logo-container">
+        <img src="images/MozaBook_Logo.png" alt="MozaBook Logo" class="logo">
+      </div>
+      <h1>MozaBook AI Assistant</h1>
+      <p>Ваш інтелектуальний помічник для навчання</p>
+      <div class="header-controls">
+        <button id="theme-toggle-main" class="theme-toggle-btn header-control-btn">🌙</button>
+      </div>
+    </div>
+    
+    <div class="menu-buttons">
+      <button id="nav-button" class="menu-button">
+        <span class="button-icon">🌐</span>
+        <span>Навігація по сайту</span>
+      </button>
+      <button id="chat-button" class="menu-button">
+        <span class="button-icon">💬</span>
+        <span>Чат з AI-асистентом</span>
+      </button>
+    </div>
+    
+    <div class="version-info">MozaBook AI Assistant v4.0</div>
+  </div>
+
+  <div id="navigation-menu" class="navigation-menu" style="display: none;">
+    <div class="nav-header">
+      <button id="back-to-menu" class="back-button-nav">←</button>
+      <h2>Навігація по сайту</h2>
+    </div>
+    <div id="nav-links-container" class="nav-links-container"></div>
+  </div>
+
+  <div id="chat-mode" class="chat-container" style="display: none;">
+    <div class="chat-header">
+      <button id="back-to-menu-chat" class="back-button-chat">←</button>
+      <h2>MozaBook AI Assistant</h2>
+      <div class="header-buttons">
+        <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+        <button id="clear-history" class="clear-history-btn">🗑️</button>
+      </div>
+    </div>
+    
+    <div id="chat-messages" class="chat-messages"></div>
+    
+    <div class="chat-input-container">
+      <form id="search-form">
+        <div class="input-wrapper">
+          <input type="text" id="query-input" placeholder="Введіть ваше запитання..." autocomplete="off">
+          <ul id="suggestions-list" class="suggestions-list" style="display: none;"></ul>
+        </div>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="loading">Обробка запиту...</div>
+  <div id="error"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html> 
