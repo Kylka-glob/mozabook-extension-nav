@@ -1,0 +1,1 @@
+# mozabook-extension-nav
